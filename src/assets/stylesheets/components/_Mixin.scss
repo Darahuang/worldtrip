@@ -1,0 +1,56 @@
+@mixin card-overlay { //在圖片加一層改變亮度的效果，hover時觸發此效果
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 1;
+  backdrop-filter: brightness(70%);
+  @content;
+}
+@mixin card-image-zoom-in {  // hover時,圖片放大效果
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+  @content;
+}
+
+@mixin card-image-zoom-out { // hover時,圖片縮小效果
+  transform: scale(1.15);
+  transition: all 0.5s ease-out;
+  @content;
+}
+
+@mixin btn-slide-right {
+  box-shadow: inset 0 0 0 0 $secondary;
+  background-color: $primary;
+  transition: ease-out 0.5s;
+  outline: none;
+  color: $white;
+  &:hover {
+    box-shadow: inset 480px 0 0 0 $secondary;
+    color: $black;
+  }
+}
+
+@mixin overlay{ //在圖片加上一層淺黑色
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.4;
+  background-color: #000000;
+  @content;
+}
+
+@mixin img-ratio{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  @include media-breakpoint-down(md) {
+    aspect-ratio: 16/9;
+  }
+  @content;
+}

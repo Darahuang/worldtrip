@@ -1,0 +1,104 @@
+.products-banner-bg {
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1628090351166.jpg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=Fk1U5QKxI%2BDRHyN9AsOikpVWIin7EO%2FoZ%2F%2Fpbz6pa1nGqvBdZXtcgW%2FLiel9Ppcge6YJm1Nbuuye2wavyuOac4M24JRXBQz7t%2FYE79r8%2BXNSL0LVxP%2BsaC6um3z4oT6oGL6LzxIklqX%2BTpYNwhjFtxWbXCZZkedCSHGx5QhkN%2FJeAAsApmvG2ul4ADrbVAvmuKVDxTM7%2Bwa8g5Cq44Nx4DK85gyILeXHlymT45T5Wd2%2FA4jiqGNsidnqfoKZjHxM96yOyfKnHtHPeospzrDMdt3nRHKeFeNAFEKM2ovv3NdF0lXQAnEyfJXVTjPSf8%2BqqNZZAI2GgDNELKEPVQPF%2BA%3D%3D);
+  height: 350px;
+  @include media-breakpoint-down(md) {
+    height: 250px;
+  }
+}
+
+.category {
+  border-bottom: 1px solid $gray-400;
+  @include media-breakpoint-down(md) {
+    border-bottom: none;
+  }
+}
+
+
+.category-list {
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    border-bottom: 1px solid $gray-400;
+  }
+  .category-item {
+    border-bottom: 3px solid transparent;
+    color: $primary;
+    @include media-breakpoint-down(md) {
+      border-bottom: none;
+    }
+    &:focus,
+    &:hover,
+    &.active {
+      border-bottom: 3px solid $secondary;
+      color: $primary;
+      @include media-breakpoint-down(md) {
+        border-bottom: none;
+        background-color: $primary;
+        color: $white;
+      }
+      
+    }
+    
+  }
+}
+
+.products-card {
+  box-shadow: 0px 1px rgba(44, 99, 167, 0.2);
+  border: 1px solid rgba(44, 99, 167, 0.2);
+  transition: all linear 0.1s;
+  &:hover {
+    box-shadow:0px 0px 0px 1px rgba(44, 99, 167, 0.5);
+    border: 1px solid rgba(44, 99, 167, 0.5);
+    .products-card-img {
+      transform: scale(1, 1);
+    }
+    .social-icons {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .products-card-img {
+    @include img-ratio;
+    @include card-image-zoom-out;
+  }
+  .social-icons {
+    transition: all 0.2s ease-out 0s;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    .icon {
+      transition: all 0.5s ease-out 0s;
+      background: $white;
+      color: $primary;
+      width: 64px;
+      height: 50px;
+      line-height: 50px;
+      &:hover {
+        background: $primary;
+        color: $white;
+      }
+    }
+  }
+  .favoriteIcon-position {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .favoriteIcon-bg {
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 50%;
+  }
+  .badge-position {
+    position: absolute;
+    bottom: -10px;
+    left: 10px;
+  }
+}
+
+.search-bg {
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1627184523170.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=O8t1aIvSzjShiC9lTLEOeJEblklzkiiGodwRP3Wt5MBnQUX4B0m68em%2BbDmufxoMcoV%2FDGkM%2BRdNBRc%2Bi2giLt5XA6izeXo2KwBTZBP48ZpQDuekhA272wv5pxeIIr3xTX1Qr1DPNGoX7CNfdP5gtZrXmNOAPuPgXEV9j%2BTyijce5649kDT%2FhiLY0mrlGmYL898TMq%2FLZvPMDZjB2c1t7ou1mh9ssyYO2WMY8YX%2B9veITf%2BfoP5ni3BuUn9v0jqwjzgWDIvnvPCw7BJJU6whR8zzwglartQdQGPNJCv7Me%2FCRvgG9wqxk%2B4SZpxaTepn1JUHGWTrHaPrC06NjWJuFw%3D%3D);
+  width: 180px;
+  height: 180px;
+}

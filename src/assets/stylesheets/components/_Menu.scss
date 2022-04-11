@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.font-logo {
+  font-family: "Courgette", cursive;
+}
+.shoppingCart-icon-position {
+  position: absolute;
+  top: -5px;
+  left: 25px;
+  @include media-breakpoint-down(lg) {
+    top: -5px;
+    left: 10px;
+  }
+}
+.favorite-icon-position {
+  position: absolute;
+  top: -5px;
+  left: 80px;
+  @include media-breakpoint-down(lg) {
+    top: -5px;
+    left: 55px;
+  }
+}
+.navbar {
+  .navbar-nav {
+    .nav-link-primary {
+      color: #2c63a7;
+      &:hover, &.active {
+        color: #f4cc1c;
+      }
+    }
+    .nav-link-padding {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      @include media-breakpoint-down(lg) {
+        padding-right: 1.5rem;
+        padding-left: 0;
+      }
+    }
+  }
+}
+.logo-svg {
+  width: 50px;
+  height: 50px;
+}
+

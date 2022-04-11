@@ -1,0 +1,11 @@
+.login-bg {
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1628090293980.jpg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=VxEk66fnGQTi%2B%2B0BA1KaSzrND%2FTFYjkDCgwFnVS6cV34oOyWoxblEIkZpnBtdyErjoe729jENRBl6H4%2BHVJZnp%2BIZ6pE6sF5S1mkyw%2FWlJ5WHvoMqwKcQiyK%2F4KDg4LzVjyAOsxoy1rywTUx3fAKe%2BNPlRUfZDwxLwqsDpW7S3%2BrbbEJgJ2iynmbb4UYigMrkHz%2FQRAP%2FI%2BjbR%2BeKjC7CKEMIdWLeloF4hMEaLpY%2FLUJMUELR9CZ1jMVBTjBt3X3IRtMqrt5J%2BUHWriLEvjKhlb%2BnhyFgVnlQuCNQrRTf4ZNUC5K%2FlDZcY6HI0gBI36U3k%2B2d2O0CFZbWMFRvkjKTw%3D%3D);
+  height: 100vh;
+}
+
+.login-input {
+  background: rgba(255, 255, 255, 0.4);
+  &:focus {
+    background-color: transparent;
+  }
+}

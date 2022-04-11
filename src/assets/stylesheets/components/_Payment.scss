@@ -1,0 +1,17 @@
+.payment-bg{
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1628089287703.jpg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=iJPygzCoo2xIFtNyuWkvKlmVlMXugjR6iRMR1%2BXub40EugZfHp%2BCU%2BClD2dvnL398EzL%2FfrM%2BcjbXsEZx8rCmTa5PQMCOuiauu9as1NS8m99vpd5jJWa9cgt%2FBU%2FwKDX1dMMvFunXrMSjSEwc6sI1Zk6nCS7f7zDfMEKNusTQX4OIRdwkUm0iSplUSno677ISbl7B6ZgmcnBV%2FAE90mLcfcrZP2haOq10cHMkl7LR%2B1P0nhc1oG5HSLFxA%2FcoDpe9Ge7HiaL%2FsHYcGwYFK12fAbM0TPPs7mWmKB9Vl2GG2%2BWcinv4BFRpFsIdmDkMKjfKxvE2oSfU%2BKlV5eVOqA%2FcQ%3D%3D);
+  height: 100vh;
+  @include media-breakpoint-down(md){
+    opacity: 0.3;
+  }
+}
+.payment-bg-md-position{
+  @include media-breakpoint-down(md){
+    position: absolute;
+  }
+}
+.user-bg{
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1628324317130.png?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=Tgrei10gv5J2ub374o%2Bgj11C7bPnmZqup6JLM486q%2F0aH7pyNzEQLA5y3W%2BpUTdih%2B8LR6ahi7x4VxuaO0W3wRiFoeOmgHRHqNmeTX0s%2Bu4DdZwP3iwXQzB1TNEelklRREnw2SIvO4p0fdOLWRMOjnjTuTBrxGapnaqfmKUiCdp%2FU%2BbD8UlC7wlGSI05yInGUeqHjEFh4WSLcFMGHslMtPyd%2FtA5QU8YDARuvccoK9s6B5Uoa1vAxq8q3zXNTGRtBDJpdtskK9nSyOcqWfcUW8zw8pFoV1mtigYozNqHApTAuZr%2BAUlw5s5xDEiSz4g2L2rCT1OlTWBD2P6wDWr3EQ%3D%3D);
+  height: 250px;
+  width: 250px;
+}

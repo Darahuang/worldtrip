@@ -1,0 +1,32 @@
+.info-icons{
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.icon-support{
+  background-color: #fbeeb2;
+  &:hover{
+    background-color: $secondary;
+  }
+}
+.icon-call {
+  background-color: #e4fbb2;
+  &:hover{
+    background-color: $secondary;
+  }
+}
+.icon-email{
+  background-color: #fbcab2;
+  &:hover{
+    background-color: $secondary;
+  }
+}

@@ -1,0 +1,82 @@
+.selected-card {
+  &:hover{
+    .selected-card-height-special, .selected-card-img {
+      transform: scale(1.15);
+    }
+    .selected-card-title::after {
+      width: 100%
+    }
+    .selected-card-overlay{
+      backdrop-filter: brightness(100%);
+    }
+  }
+  .selected-card-img{
+    @include card-image-zoom-in; 
+    height: 250px;
+  }
+  .selected-card-height-special{
+    @include card-image-zoom-in; 
+    height: 500px;
+    @include media-breakpoint-down(md) {
+      height: 250px;
+    }
+  }
+  .selected-card-title{
+    position: absolute;
+    bottom: 5px ;
+    right: 5px;
+    &::after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 3px;
+      background-color: $secondary;
+      transition: width 0.5s;
+    }
+  }
+  .selected-card-overlay {
+    @include card-overlay;
+  }
+}
+.notice-card{
+  transition: all .3s ease-in-out;
+  &:hover {
+    box-shadow: 3px 3px 5px 0 rgba(0,0,0,.1);
+    .notice-card-img {
+      transform: scale(1.15);
+    }
+  }
+  .notice-card-img {
+    height: 250px;
+    width: 100%;
+    @include card-image-zoom-in;
+  }
+}
+
+
+.second-banner {
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1626853808471.jpeg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=An63RqojHYGTFOL7Hphwoe3Zc1r%2FUg9lLn%2FPNXx9ddVFXaCKnXhngcwYCAA9TJyTaufGuTQGyy%2FgHeoNqb%2BSrSyWLNHnWvSyerZsSFa4yMq%2BiNo7ufIEYKaNS3e8RQgAeJpfsjnDXcQQmB32yfeUT5qcVylutUQtP3j%2FZsy98O0IawwdqsEZ%2FiGrjmIhiy9MU03uQTB%2FsHojaeAMx1YIhaL0OsYo0BEFCRENRyQ2CxKmer3lktwdhPgwlRv1gCMY1qRnh3TaXoKVKaHx1JDie8tXKYBYAZgYmuZGRagq4PWYKQp1iwPeeyyFt4uKyec%2FPV4zVfvnvPsOPwr4O23qpQ%3D%3D);
+  background-attachment: fixed;
+  height: 250px;
+  @include media-breakpoint-down(md) {
+    height: 200px;
+  }
+}
+.overlay {
+  @include overlay
+}
+.btn-outline-white{
+  border: 1px solid $white;
+  color: $white;
+  &:hover{
+    background-color: $secondary;
+    border: 1px solid $secondary;
+  }
+}
+
+.hover-up {
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-10px);
+  }
+}

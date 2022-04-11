@@ -1,0 +1,13 @@
+.banner-img-height{
+  height: 550px;
+  width: 100%;
+  @include media-breakpoint-down(sm) {
+    height: 350px;
+  }
+}
+.swiper-button-prev, .swiper-button-next {
+  --swiper-theme-color: #F4CC1C;
+}
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: #F4CC1C;
+}

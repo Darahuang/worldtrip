@@ -1,0 +1,6 @@
+.form-input-bg {
+  background-color: rgba(44, 99, 167, 0.05);
+  &:focus {
+    background-color: transparent;
+  }
+}

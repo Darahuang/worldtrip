@@ -1,0 +1,43 @@
+.about-height {
+  height: 450px;
+  @include media-breakpoint-down(md) {
+    height: 300px;
+  }
+}
+
+.about-bg {
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1628089681811.jpeg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=cpiKlEwcgzU0J5K%2FcT1WKv1E0czMCpIbZIUuS2bw0xu9JR%2F%2FHioQhWF16Bj%2Bg0FHE2M5Zsjy5jl4nTyFs0r1b8bFd7MxOQVSS%2Fqomg48okyjiCpJ4PPgrCxIcNPLnLjZyBB3KZNrH7k7KUM3Yzmvd6sZQn7MXL3zY4EuAyJX6bMuVc4xcqtHssXBuxu55wEZmDTBaa6VZm9DmsKJNL%2FrXXVW8ylKqbNoGKkwTinGW7Hjx68NhyeiJl7BNXnRSEUVQRx31tv4rbdRRHwn%2FOScFrv9YF702YUqfQaLPRhkpvWTJsxFedK8FMUF%2BSVCx%2FfhCtvTyMlLaqVh%2BLA3Tx7zRw%3D%3D);
+}
+
+.about-bg2 {
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1628089828261.jpeg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=iXFMnpOe9xjDE8dHXdNVyzL1FrKrNzfVZEml0c0JYYaAKhAe2gncnN1RwIqtokceAfn8Mf2xC6DevytyQIbHIk4qGUsk%2BCiMiY6v%2FtXjYHP94t9YfFjP3gvgkQArRrgpMLPdMhobbaVwLJLzAUh75wvm5rd%2BAlJ%2BHNjSjS8eBYmQsqDOyoPYaj%2Fhgxxl4LdPAKN%2BJbbaxWPBKP%2FItQeyLECPvY3n9%2Frq4IuNTIqRQv12SiwA9j8YWlhBHaIVCwu%2FR5L2q9zVv%2Fn0O4wW5Va2TdUMAQuE7isDSN2HPN%2BDHKBJmrmVY4%2FkUVvwWqcanNnl4fXkr7SXBkNk1pydPzLX0A%3D%3D);
+}
+
+
+.feature {
+  &:hover {
+    .feature-icon {
+      animation: shake 0.2s linear infinite alternate ;
+    }
+  }
+  .feature-icon {
+   color: $secondary;
+   font-size: 65px;
+   vertical-align: middle;
+  }
+}
+
+
+@keyframes shake {
+  from {
+    transform: rotate(15deg);
+  }
+  to {
+    transform: rotate(-15deg);
+  }
+}
+
+.info-bg {
+  background-image: url(https://storage.googleapis.com/vue-course-api.appspot.com/starlightselection/1628090401860.jpeg?GoogleAccessId=firebase-adminsdk-zzty7%40vue-course-api.iam.gserviceaccount.com&Expires=1742169600&Signature=JYreFipHyF%2BFq6OPa7hKyIcb1zhr5z8b1piIs2BiMgG%2B68FHl%2BKLpnkQadSCvmisu2Mrb8Kyl3F3jkSSTK6kHVOG3j7inPFkHvTgcwgrIem%2FVEBTyJJcvUQXuAw1iGTw1kCnnWuXs33lvwEgpECeo8wMGWptXLcB8fDd1Wfbunb5oTcKgQgb1lQU8Qqu%2BvUC6eV0mdmMTzs5Qehb3p%2BQviD%2FgJa8VBnf3FQCNqnJ0S48iSmzX6QXXMN0hS5ZQAywd2dhGhO49qR37LhWFjYIacsdc%2BH8jnJ2m8JvBSsoSwpOMvWea6ND%2F1Z5%2FxtNATrAMBkx35gFyMkEmmI6fHYSFA%3D%3D);
+  height: 250px;
+}
